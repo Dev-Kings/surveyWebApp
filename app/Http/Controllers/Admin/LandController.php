@@ -74,10 +74,10 @@ class LandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit(Land $land)
     {
-        //return view('admin.lands.edit');
-        return 'Hi there';
+        //dd($land);
+        return view('admin.lands.edit', compact('land'));
     }
 
     /**
@@ -87,9 +87,19 @@ class LandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Land $land)
     {
-        //
+        //dd($land);
+        $landFields = $request->validate([
+            'land_location' => 'required',
+            'land_size' => 'required',
+            'land_price' => 'required',
+            'land_description' => 'required',
+        ]);
+
+        $land->update($landFields);
+
+        return to_route('admin.lands.index')->with('message', 'Land details updated successfully.');
     }
 
     /**
@@ -98,8 +108,8 @@ class LandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($land)
     {
-        //
+        dd($land);
     }
 }

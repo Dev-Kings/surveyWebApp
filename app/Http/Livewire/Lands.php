@@ -3,10 +3,12 @@
 namespace App\Http\Livewire;
 
 use App\Models\Land;
+use NumberFormatter;
+use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Builder;
-use PowerComponents\LivewirePowerGrid\Rules\{Rule, RuleActions};
 use PowerComponents\LivewirePowerGrid\Traits\ActionButton;
+use PowerComponents\LivewirePowerGrid\Rules\{Rule, RuleActions};
 use PowerComponents\LivewirePowerGrid\{Button, Column, Exportable, Footer, Header, PowerGrid, PowerGridComponent, PowerGridEloquent};
 
 final class Lands extends PowerGridComponent
@@ -81,12 +83,20 @@ final class Lands extends PowerGridComponent
     */
     public function addColumns(): PowerGridEloquent
     {
+        //$sq = new NumberFormatter('pt_PT', NumberFormatter::CURRENCY);
+
         return PowerGrid::eloquent()
             ->addColumn('id')
             ->addColumn('land_location')
             ->addColumn('land_size')
             ->addColumn('land_price')
-            ->addColumn('land_description')
+            // ->addColumn('land_price', function (Land $model) {
+            //     return $sq->formatCurrency($model->price, "KSHS.");
+            //   })
+            // ->addColumn('land_description')
+            ->addColumn('land_description', function (Land $model) {
+                return Str::words($model->land_description, 8); //Gets the first 8 words
+            })
             ->addColumn('created_at_formatted', fn (Land $model) => Carbon::parse($model->created_at)->format('d/m/Y H:i:s'))
             ->addColumn('updated_at_formatted', fn (Land $model) => Carbon::parse($model->updated_at)->format('d/m/Y H:i:s'));
     }
@@ -168,10 +178,11 @@ final class Lands extends PowerGridComponent
                ->class('bg-indigo-800 cursor-pointer text-white px-3 py-2.5 m-1 rounded text-sm')
                ->route('admin.lands.edit', ['land' => 'id']),
 
-        //    Button::make('destroy', 'Delete')
-        //        ->class('bg-red-500 cursor-pointer text-white px-3 py-2 m-1 rounded text-sm')
-        //        ->route('land.destroy', ['land' => 'id'])
-        //        ->method('delete')
+           Button::make('destroy', 'Delete')
+               ->target(target: '')
+               ->class('bg-red-500 cursor-pointer text-white px-3 py-2.5 m-1 rounded text-sm')
+               ->route('admin.lands.destroy', ['land' => 'id'])
+               ->method('delete')
         ];
     }
     

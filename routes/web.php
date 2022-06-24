@@ -45,8 +45,9 @@ Route::middleware(['auth', 'role:admin'])->name('admin.')->prefix('admin')->grou
     Route::get('/lands', [LandController::class, 'index'])->name('lands.index');
     Route::get('/lands/create', [LandController::class, 'create'])->name('lands.create');
     Route::post('/lands/store', [LandController::class, 'store'])->name('lands.store');
-    Route::get('/lands/{land}', [LandController::class, 'edit'])->name('lands.edit');
-    
+    Route::get('/lands/{land}/edit', [LandController::class, 'edit'])->name('lands.edit');
+    Route::post('/lands/{land}/update', [LandController::class, 'update'])->name('lands.update');
+    Route::delete('/lands/{land}', [LandController::class, 'destroy'])->name('lands.destroy');
 });
 
 require __DIR__.'/auth.php';
