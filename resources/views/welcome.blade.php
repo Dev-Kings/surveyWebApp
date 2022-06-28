@@ -22,7 +22,7 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
+            {{-- @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
@@ -34,16 +34,15 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif --}}
 
             <x-generic-layout>
 
-                <div class="py-12 w-full">
-                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="py-4 px-4 w-full">
+                    <div class="max-w-9xl mx-auto sm:px-6 lg:px-8">
                         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-2">
-                            
-                            <div class="flex flex-col mt-8">
-                                <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+                            <div class="flex-col -mt-6">
+                                <div class="py-2 my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
                                     <livewire:generic-lands/>                                    
                                 </div>
                             </div>
@@ -51,6 +50,7 @@
                     </div>
                 </div>
             </x-generic-layout>
+            
         </div>
     </body>
 </html>
