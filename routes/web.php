@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\LandController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\PropertyController;
 use App\Models\Land;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,8 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/properties-on-sale', [PropertyController::class, 'index'])->name('properties');
 
 Route::middleware(['auth', 'role:admin'])->name('admin.')->prefix('admin')->group(function (){
     Route::get('/', [IndexController::class, 'index'])->name('index');

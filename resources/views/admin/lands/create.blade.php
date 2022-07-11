@@ -53,6 +53,17 @@
                           <div class="sm:col-span-6 pt-5">
                             <button type="submit" class="px-4 py-2 bg-blue-500 hover:bg-green-700 rounded-md">Create</button>
                           </div>
+
+                          {{-- <x-bladewind.notification />
+                          <x-bladewind.button 
+                                size="big"
+                                can_submit="true"
+                                onclick="showNotification(
+                                    'Details Added Successfully',
+                                    'Land Details Saved')">
+                                Create
+                          </x-bladewind.button> --}}
+
                         </form>
                       </div>
                     
