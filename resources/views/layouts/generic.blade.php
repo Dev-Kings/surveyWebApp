@@ -86,7 +86,7 @@
                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <img src="{{ asset('images/cadastral.svg') }}" class="w-6 h-6 rounded-md">
+                                <img src="{{ asset('images/svg/cadastral.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
                                 <p class="font-semibold">Cadastral</p>
@@ -96,7 +96,7 @@
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <img src="{{ asset('images/powerline.svg') }}" class="w-6 h-6 rounded-md">
+                                <img src="{{ asset('images/svg/powerline.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
                                 <p class="font-semibold">Powerline</p>
@@ -106,7 +106,7 @@
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <img src="{{ asset('images/waterline.svg') }}" class="w-6 h-6 rounded-md">
+                                <img src="{{ asset('images/svg/waterline.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
                                 <p class="font-semibold">Waterline</p>
@@ -128,7 +128,7 @@
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <img src="{{ asset('images/grant.svg') }}" class="w-6 h-6 rounded-md">
+                                <img src="{{ asset('images/svg/grant.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
                                 <p class="font-semibold">New Grant Survey</p>
@@ -138,7 +138,7 @@
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <img src="{{ asset('images/mutation.svg') }}" class="w-6 h-6 rounded-md">
+                                <img src="{{ asset('images/svg/mutation.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
                                 <p class="font-semibold">Mutations</p>
@@ -148,7 +148,7 @@
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <img src="{{ asset('images/division.svg') }}" class="w-6 h-6 rounded-md">
+                                <img src="{{ asset('images/svg/division.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
                                 <p class="font-semibold">Subdivision</p>
