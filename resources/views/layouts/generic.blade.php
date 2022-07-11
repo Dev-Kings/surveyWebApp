@@ -83,36 +83,79 @@
                     </button>
                     <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30">
                         <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700">
-                          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                                <img src="{{ asset('images/cadastral.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
-                                <p class="font-semibold">Appearance</p>
-                                <p class="text-sm">Easy customization</p>
+                                <p class="font-semibold">Cadastral</p>
+                                <p class="text-sm">Boundary survey</p>
                               </div>
                             </a>
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                                <img src="{{ asset('images/powerline.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
-                                <p class="font-semibold">Comments</p>
-                                <p class="text-sm">Check your latest comments</p>
+                                <p class="font-semibold">Powerline</p>
+                                <p class="text-sm">Wayleave in regard to power/electricity</p>
                               </div>
                             </a>
 
                             <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                               <div class="bg-teal-500 text-white rounded-lg p-3">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                                <img src="{{ asset('images/waterline.svg') }}" class="w-6 h-6 rounded-md">
                               </div>
                               <div class="ml-3">
-                                <p class="font-semibold">Analytics</p>
-                                <p class="text-sm">Take a look at your statistics</p>
+                                <p class="font-semibold">Waterline</p>
+                                <p class="text-sm">Determine piped-water path as per terrain</p>
                               </div>
                             </a>
+
+                            <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                              <div class="bg-teal-500 text-white rounded-lg p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                </svg>
+                              </div>
+                              <div class="ml-3">
+                                <p class="font-semibold">Topographical</p>
+                                <p class="text-sm">Determine area of land, boundary</p>
+                              </div>
+                            </a>
+
+                            <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                              <div class="bg-teal-500 text-white rounded-lg p-3">
+                                <img src="{{ asset('images/grant.svg') }}" class="w-6 h-6 rounded-md">
+                              </div>
+                              <div class="ml-3">
+                                <p class="font-semibold">New Grant Survey</p>
+                                <p class="text-sm">Survey as per the court grant</p>
+                              </div>
+                            </a>
+
+                            <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                              <div class="bg-teal-500 text-white rounded-lg p-3">
+                                <img src="{{ asset('images/mutation.svg') }}" class="w-6 h-6 rounded-md">
+                              </div>
+                              <div class="ml-3">
+                                <p class="font-semibold">Mutations</p>
+                                <p class="text-sm">Processing of mutation</p>
+                              </div>
+                            </a>
+
+                            <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                              <div class="bg-teal-500 text-white rounded-lg p-3">
+                                <img src="{{ asset('images/division.svg') }}" class="w-6 h-6 rounded-md">
+                              </div>
+                              <div class="ml-3">
+                                <p class="font-semibold">Subdivision</p>
+                                <p class="text-sm">Land sub-division as per agreed terms</p>
+                              </div>
+                            </a>
+
                           </div>
                         </div>
                     </div>
