@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\LandController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\PropertyController;
 use App\Models\Land;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/properties-on-sale', [PropertyController::class, 'index'])->name('properties');
+Route::get('/contact-page', [PageController::class, 'contact'])->name('contact-page');
 
 Route::middleware(['auth', 'role:admin'])->name('admin.')->prefix('admin')->group(function (){
     Route::get('/', [IndexController::class, 'index'])->name('index');
