@@ -1,1 +1,1 @@
-Roles and permissions using Spartie
+A web app managing land records details
