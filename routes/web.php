@@ -23,7 +23,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
+
+Route::get('/lands', function () {
+    return view('lands');
+})->name('lands');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
